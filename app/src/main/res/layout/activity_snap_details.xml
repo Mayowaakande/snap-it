@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/child">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_arrow_back"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/imgBack"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/imgBack"
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp"
+                android:id="@+id/card">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgSnap"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_logo" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Description"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"
+                android:text="Data.."
+                android:textColor="#696767"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/ttt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDescription"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Location"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_below="@+id/ttt" />
+
+            <Button
+                android:id="@+id/btnAddToBookmarks"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/mapView"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/login_btn_bg"
+                android:text="Add to Bookmarks"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_below="@+id/btnAddToBookmarks"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

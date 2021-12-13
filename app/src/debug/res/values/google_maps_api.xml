@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=8C:50:35:CF:1D:F1:35:CC:17:DA:0C:C0:67:2A:ED:2A:25:A1:06:44%3Bcom.app.snapsapp.activities
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.app.snapsapp.activities
+
+    SHA-1 certificate fingerprint:
+    8C:50:35:CF:1D:F1:35:CC:17:DA:0C:C0:67:2A:ED:2A:25:A1:06:44
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDDB9QJlbIrCKSCPVtePbu-B5vmTpI4Hug</string>
+</resources>
